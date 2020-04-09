@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+      <title>IPIZZARIA</title>
+      <meta charset="UTF-8"/>
+      <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+      <link rel="icon" href="../IMG/iconfinder_pizza.png">
+   </head>
+
+   <body>   
+      <header>
+         <h1>Order Fulfillment</h1>
+      </header>
+
+      <div>
+      <form class="Formulario_Invoice" name="Formulario_Invoice" method="get">
+
+      <fieldset><legend>Personal informations</legend>
+         <p>Full name:            <input type="text" required name="nome" placeholder="Full name"> </p>
+         <p>Year of birth: <br>   <input type="date" required name="ano"> </p>
+      </fieldset>
+
+      <fieldset><legend>Sex</legend>
+         <input type="radio" name="sexo" id="masc" value="sexo" checked/>
+         <label for="masc">Male</label><br/>
+         <input type="radio" name="sexo" id="fem" value="sexo"/>
+         <label for="fem">Feminine</label><br/>
+      </fieldset><br/>
+
+      <fieldset><legend>Delivery</legend>
+         <p>Enter the address: <input type="text" name="trajeto" placeholder="Address of delivery"></p>
+         
+         <p>Pick up on location:</p>
+         <input type="radio" name="local" id="yes" value="local" checked>
+         <label for="yes">Yes</label><br/>
+         <input type="radio" name="local" id="no" value="local">
+         <label for="no">No</label><br/>
+      </fieldset>
+
+      <fieldset><legend>Flavors</legend>
+      <p>First taste: <input type="text" required name="1sabor" placeholder="First taste"></p>
+      <p>Second flavor: <input type="text" name="2sabor" placeholder="Second flavor"></p>
+      <p>Edge Filling: <input type="text" name="borda" placeholder="Edge Special"></p>
+      </fieldset> <hr>
+
+      <input type="submit" name="Enviar" class="botao" value="Submit" onclick="enviar()">
+      <input type="reset" value="Cancel" class="cancel" onclick="cancel()">
+
+      <script>
+         function cancel(){
+            alert("Cancelamento de cadastro, realizado!");
+         }
+
+         function enviar() {
+            alert("Pedido enviado com sucesso!");
+         }
+      </script>
+
+      </form>
+      </div>
+
+   </body>
+</html>

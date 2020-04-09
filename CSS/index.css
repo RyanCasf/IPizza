@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lilita+One|Marck+Script|Pacifico|Roboto&display=swap');
+
+.Formulario_Invoice input:focus:invalid, .Formulario_Invoice textarea:focus:invalid {
+   box-shadow: 0 0 5px #d45252;
+   border-color: #b03535;
+}
+
+.Formulario_Invoice input:required:valid, .Formulario_Invoice textarea:required:valid{
+   box-shadow: 0 0 5px #5cd053;
+   border-color: #28921f;
+}
+
+#back {
+   width: 90px;
+   height: 110px;
+}
+
+input.botao{
+   width: 120px;
+   height: 40px;
+   background-color: #0C9; 
+   color: white; 
+   padding: 3px; 
+   cursor: pointer;
+   margin-top: 1%;
+   transition: 0.8s;
+}
+
+input[type="reset"].botao:hover{
+   background: red;
+   box-shadow: inset 2px 2px 2px rgba(0,0,0,0.3);
+   text-shadow: none;
+}
+
+input.cancel{
+   width: 120px;
+   height: 40px;
+   background-color: red; 
+   color: white; 
+   padding: 3px; 
+   cursor: pointer;
+   margin-top: 1%;
+   transition: 0.8s;
+}
+
+input[type="reset"].cancel:hover{
+   background: #D90000;
+   box-shadow: inset 2px 2px 2px rgba(0,0,0,0.3);
+   text-shadow: none;
+}
+
+input[type="submit"].botao:hover{
+   background: green;
+   box-shadow: inset 2px 2px 2px rgba(0,0,0,0.3);
+   text-shadow: none;
+   transition: 0,85;
+}
+
+body{
+   background-image: url("../IMG/background2.jpg");
+   background-repeat: repeat;
+   background-size: 100%;
+   font-family: 'Roboto', sans-serif;
+   opacity: 0.86;
+}
+
+legend{
+   text-align: center;
+   font-family: cursive;
+}
+
+form{
+   padding: 1%;
+}
+
+div{
+   border-radius: 6px;
+   background-color: #fff9f9;
+   position: absolute;
+   left: 20%;
+   top: 20%;
+   color: #303;
+   font-family: fantasy;
+   font-size: 20px;
+   text-align: left;
+   width: 60%;
+   height: 75%;
+   overflow:auto;
+}
+
+h1{
+   font-family: 'Pacifico', cursive;
+   text-align: center;
+   text-shadow: 5px 2px 1px rgba(255, 255, 255, 0.5);
+   font-size: 60px;
+   font-style: oblique;
+   color:white;
+   margin-top: 0;
+}
+
+p, label {
+   font-family: 'Lilita One', cursive;
+   font-size: 1em;
+}
+
+span{
+   color:#f41616;
+   text-shadow: 1px 1px 1px black;
+}
+
+input[type="text"], input[type="email"], input[type="date"]{
+   width: 250px;
+   height: 35px;
+   display: block;
+}
+
+input, textarea {
+   font-size: 15px;
+   padding: 6px;
+   border-radius: 7px;
+   margin-bottom: 15px;
+   border: 1px solid #e5dede;
+   border-radius: 18px;
+   outline: none;
+}
+
+fieldset {
+   border-radius: 10px;
+}
