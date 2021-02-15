@@ -15,6 +15,10 @@
    height: 110px;
 }
 
+#btns {
+	text-align: center;
+}
+
 input.botao{
    width: 120px;
    height: 40px;
@@ -35,7 +39,7 @@ input[type="reset"].botao:hover{
 input.cancel{
    width: 120px;
    height: 40px;
-   background-color: red; 
+   background-color: #ff3500; 
    color: white; 
    padding: 3px; 
    cursor: pointer;
@@ -67,6 +71,7 @@ body{
 legend{
    text-align: center;
    font-family: cursive;
+   color: black;
 }
 
 form{
@@ -76,7 +81,7 @@ form{
 div{
    border-radius: 6px;
    background-color: #fff9f9;
-   position: absolute;
+   position: relative;
    left: 20%;
    top: 20%;
    color: #303;
@@ -126,4 +131,17 @@ input, textarea {
 
 fieldset {
    border-radius: 10px;
+}
+
+#ft {
+	width: 100%;
+	float: left;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+#ft p {
+	padding-bottom: 2%; 
+	font-size: 1.15em;
 }

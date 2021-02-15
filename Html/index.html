@@ -17,8 +17,8 @@
       <form class="Formulario_Invoice" name="Formulario_Invoice" method="get">
 
       <fieldset><legend>Personal informations</legend>
-         <p>Full name:            <input type="text" required name="nome" placeholder="Full name"> </p>
-         <p>Year of birth: <br>   <input type="date" required name="ano"> </p>
+         <label>>Full name:            <input type="text" required name="nome" placeholder="Full name"> </label>
+         <label>>Year of birth: <br>   <input type="date" required name="ano"> </label>
       </fieldset>
 
       <fieldset><legend>Sex</legend>
@@ -29,9 +29,9 @@
       </fieldset><br/>
 
       <fieldset><legend>Delivery</legend>
-         <p>Enter the address: <input type="text" name="trajeto" placeholder="Address of delivery"></p>
+         <label>>Enter the address: <input type="text" name="trajeto" placeholder="Address of delivery"></label>
          
-         <p>Pick up on location:</p>
+         <label>>Pick up on location:</label> <br>
          <input type="radio" name="local" id="yes" value="local" checked>
          <label for="yes">Yes</label><br/>
          <input type="radio" name="local" id="no" value="local">
@@ -39,13 +39,13 @@
       </fieldset>
 
       <fieldset><legend>Flavors</legend>
-      <p>First taste: <input type="text" required name="1sabor" placeholder="First taste"></p>
-      <p>Second flavor: <input type="text" name="2sabor" placeholder="Second flavor"></p>
-      <p>Edge Filling: <input type="text" name="borda" placeholder="Edge Special"></p>
+      <label>First taste: <input type="text" required name="1sabor" placeholder="First taste"></label>
+      <label>Second flavor: <input type="text" name="2sabor" placeholder="Second flavor"></label>
+      <label>Edge Filling: <input type="text" name="borda" placeholder="Edge Special"></label>
       </fieldset> <hr>
 
-      <input type="submit" name="Enviar" class="botao" value="Submit" onclick="enviar()">
-      <input type="reset" value="Cancel" class="cancel" onclick="cancel()">
+      	<input type="submit" name="Enviar" class="botao" value="Submit" onclick="enviar()">
+      	<input type="reset" value="Cancel" class="cancel" onclick="cancel()">
 
       <script>
          function cancel(){
@@ -59,6 +59,11 @@
 
       </form>
       </div>
+
+      <br>
+      <footer id="ft">
+      	<p>Copyright @Ryan Castro Ferreira 2021. All rights reserved to the author.</p>	
+      </footer>
 
    </body>
 </html>
